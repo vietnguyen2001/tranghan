@@ -898,12 +898,12 @@ h2 {
         font-size: 12px;
         line-height: 0px;
     }
-    #content_left .videos {
-        width: 100%;
+    #content_left .videos li:nth-last-child(-n+2) {
+        display: none;
     }
     #content_left .videos .box_absolute {
-        width: 180px;
-        height: 109px;
+        width: 240px;
+        height: 120px;
     }
     .list_music li .resolution {
         width: 34%;
@@ -915,8 +915,30 @@ h2 {
     #content_right {
         display: none;
     }
-    .footer {
-        display: none;
-    }
     /* footer. */
+    /* .footer {
+        display: none;
+    } */
+    #myCarousel h4 {
+        margin-left: 10px;
+    }
+    .carousel-inner .item img {
+        width: 800px;
+        max-width: 100%;
+        vertical-align: middle
+    }
+    .related_content {
+        width: 100%;
+        height: 320px;
+    }
+    .related_content .hotro {
+        margin: 0;
+        width: 30%;
+    }
+    .hotro ul li {
+        float: left;
+        width: calc(24% - 2px);
+        margin: 5px 20px;
+        /* 3 cột, giữ khoảng cách 10px giữa các cột */
+    }
 }
