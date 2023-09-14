@@ -18,7 +18,7 @@ write code to display menu on website */
 
 #header {
     width: 100%;
-    height: 100%;
+    height: 60px;
     background: white;
     padding-top: 5px;
     padding-bottom: 6px;
@@ -222,8 +222,12 @@ write code to display menu on website */
     width: 100%;
     height: 100%;
     display: flex;
-    padding-left: 100px;
+    padding-left: 50px;
     position: relative;
+}
+
+.sub_selection_menu {
+    padding-top: 10px;
 }
 
 .sub_selection_menu li {
@@ -233,7 +237,7 @@ write code to display menu on website */
 .sub_selection_menu>li>a>i {
     color: #0689ba;
     font-size: 30px;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .sub_selection_menu li a {
@@ -274,21 +278,26 @@ span {
 
 #singer_content {
     width: 100%;
-    height: 100%;
-    padding-left: 100px;
+    height: auto;
+    padding-left: 60px;
     z-index: 2;
+    display: flex;
+    /* position: relative; */
 }
 
 #content_left {
-    width: 68%;
+    width: 70%;
     height: 100%;
+    /* position: absolute; */
     float: left;
 }
 
 .content_tieusu h2,
 .content_album h2,
 .tile_box h2,
-.content_mv h2 {
+.content_mv h2,
+.new_playlist h2,
+.photo_singer h2 {
     color: #2daaed;
     font-size: 26px;
     line-height: 60px;
@@ -504,25 +513,29 @@ h3.tennhac {
     width: 28%;
     height: 100%;
     float: right;
-    position: relative;
+    /* position: absolute; */
 }
 
 .new_playlist {
-    width: 70%;
+    width: 60%;
     height: 100%;
+    position: relative;
 }
 
+
+/* 
 h2 {
     color: #2daaed;
     font-size: 26px;
     line-height: 60px;
     font-weight: 500;
-}
+} */
 
 .new_playlist>img.child_image {
     position: absolute;
     left: 0;
-    top: 10;
+    top: 2;
+    margin-top: -180px;
     width: 180px;
     height: 180px;
 }
@@ -702,3 +715,208 @@ h2 {
 
 
 /* End footer. */
+
+
+/* Mobile: width < 740px */
+
+@media only screen and (max-width:46.1875em) {}
+
+
+/* Tablet: width >=740px and width < 1024px */
+
+@media only screen and (min-width:46.25em) and (max-width:63.9375em) {
+    /* * {
+        margin: 0;
+        padding: 0;
+    } */
+    #header {
+        width: 100%;
+    }
+    #header .main_menu {
+        width: 70%;
+        height: 20px;
+    }
+    .main_menu img {
+        width: 70px;
+        height: auto;
+    }
+    .main_menu li a.logo_web img {
+        width: 40px;
+        height: 14px;
+        padding-left: 5px;
+    }
+    .main_menu li a {
+        font-size: 11px;
+        padding-left: 5px;
+    }
+    /* Search. */
+    .search {
+        width: 150px;
+        height: 20px;
+        margin-top: 12px;
+    }
+    .search .bx-search {
+        /* margin-top: px; */
+        font-size: 11px;
+    }
+    /* End Search. */
+    /* Start Store */
+    .bxs-store,
+    .bxs-cloud-upload {
+        /* width: 10%; */
+        font-size: 22px;
+    }
+    .store i {
+        width: 10px;
+        height: 10px;
+    }
+    .store .bxs-cloud-upload {
+        padding-right: 20px;
+        border: none;
+    }
+    /* End Store */
+    /* Login and Registration. */
+    .login {
+        width: 90px;
+        padding-top: 14px;
+        padding-left: 10px;
+    }
+    .login p {
+        padding: 0;
+    }
+    .login p a {
+        font-size: 11px;
+    }
+    .registration {
+        width: 100px;
+    }
+    .registration p {
+        padding: 10px 10px 10px 15px;
+        margin-top: 12px;
+        width: 70px;
+    }
+    .registration p a {
+        font-size: 11px;
+    }
+    /* End Login and Registration. */
+    /* content_warp. */
+    #content_warp {
+        width: 100%;
+        height: 250px;
+        padding-left: 0px;
+        background-image: url(https://avatar-ex-swe.nixcdn.com/singer/cover/2018/09/12/6/a/6/e/1536737303253.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        /* position: relative; */
+        /* z-index: -1; */
+    }
+    #content_warp .singer_left_avatar {
+        width: 30%;
+        height: 250px;
+        background: black;
+        opacity: 0.5;
+    }
+    #content_warp .singer_left_avatar h1 {
+        font-size: 13px;
+    }
+    .singer_left_avatar p {
+        font-size: 11px;
+    }
+    .singer_left_avatar img {
+        /* opacity: 2; */
+    }
+    #content_warp .singer_right_avatar img {
+        display: none;
+    }
+    /* End content_warp. */
+    /* selection_menu. */
+    #selection_menu {
+        padding: 0;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        position: relative;
+        /* vertical-align: middle; */
+    }
+    #selection_menu .sub_selection_menu .bx-home-alt {
+        font-size: 20px;
+    }
+    #selection_menu .sub_selection_menu li a {
+        font-size: 11px;
+        vertical-align: middle;
+    }
+    .sub_selection_menu {
+        width: 80%;
+        height: 30px;
+        text-align: justify;
+        position: absolute;
+        padding-top: -20px;
+        padding-top: 0;
+    }
+    .like {
+        width: 15%;
+        float: right;
+        top: 20%;
+    }
+    .like .button {
+        font-size: 11px;
+        width: 60px;
+        margin-left: 100px;
+        /* float: right; */
+    }
+    .button .bx-like {
+        vertical-align: middle;
+    }
+    /* end selection_menu. */
+    /* Content_left. */
+    #singer_content {
+        /* padding: 0; */
+        padding-left: 10px;
+        width: 100%;
+    }
+    .content_tieusu h2,
+    .content_album h2,
+    .tile_box h2,
+    .content_mv h2,
+    .new_playlist h2,
+    .photo_singer h2 {
+        font-size: 20px;
+        line-height: 5px;
+        color: #00aeef;
+    }
+    #content_left {
+        width: 100%;
+    }
+    .content_tieusu p {
+        width: 700px;
+    }
+    .content_album h3 {
+        font-size: 14px;
+    }
+    .content_album p {
+        font-size: 12px;
+        line-height: 0px;
+    }
+    #content_left .videos {
+        width: 100%;
+    }
+    #content_left .videos .box_absolute {
+        width: 180px;
+        height: 109px;
+    }
+    .list_music li .resolution {
+        width: 34%;
+    }
+    .list_music li .song_action {
+        /* width: 20%; */
+    }
+    /* end Content_left. */
+    #content_right {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    /* footer. */
+}
