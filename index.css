@@ -898,6 +898,9 @@ h2 {
         font-size: 12px;
         line-height: 0px;
     }
+    #content_left .videos {
+        width: 100%;
+    }
     #content_left .videos li:nth-last-child(-n+2) {
         display: none;
     }
@@ -916,16 +919,20 @@ h2 {
         display: none;
     }
     /* footer. */
-    /* .footer {
-        display: none;
-    } */
+    .footer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        /* display: none; */
+    }
     #myCarousel h4 {
         margin-left: 10px;
     }
     .carousel-inner .item img {
-        width: 800px;
+        width: 100%;
         max-width: 100%;
-        vertical-align: middle
+        vertical-align: middle;
+        margin: 0;
     }
     .related_content {
         width: 100%;
@@ -935,10 +942,27 @@ h2 {
         margin: 0;
         width: 30%;
     }
-    .hotro ul li {
+    .hotro ul li,
+    .spKhac ul li {
         float: left;
         width: calc(24% - 2px);
         margin: 5px 20px;
         /* 3 cột, giữ khoảng cách 10px giữa các cột */
+    }
+    .address {
+        width: 100%;
+        height: auto;
+    }
+    .address_logo {
+        margin-top: 40px;
+        margin-left: -40px;
+        width: 20%;
+        align-items: center;
+    }
+    .information {
+        width: 40%;
+    }
+    .certification {
+        float: right;
     }
 }
