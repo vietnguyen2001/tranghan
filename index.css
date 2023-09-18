@@ -935,34 +935,56 @@ h2 {
     }
     .related_content {
         width: 100%;
-        height: 320px;
+        height: auto;
     }
-    .related_content .hotro {
+    .related_content .hotro,
+    .spKhac,
+    .tukhoa {
         margin: 0;
-        width: 30%;
+        width: 100%;
+        height: auto;
+    }
+    .hotro ul,
+    .spKhac ul {
+        display: flex;
+        /* flex-wrap: nowrap; */
+        width: 100%;
     }
     .hotro ul li,
     .spKhac ul li {
         float: left;
-        width: calc(24% - 2px);
-        margin: 5px 20px;
+        overflow: hidden;
+        margin: 10px 2px;
+        width: auto;
         /* 3 cột, giữ khoảng cách 10px giữa các cột */
+    }
+    .hotro p,
+    .spKhac p {
+        width: 125px;
+    }
+    .tukhoa .icon_app_tukhoa img {
+        margin: 10px;
     }
     .address {
         width: 100%;
         height: auto;
+        margin-top: 800px;
     }
     .address_logo {
-        margin-top: 40px;
-        margin-left: -40px;
+        margin-top: 60px;
+        margin-left: -60px;
         width: 20%;
         align-items: center;
+        size: 11px;
     }
     .information {
-        width: 40%;
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 60px;
     }
-    .certification {
-        float: right;
+    .certification img {
+        /* float: right; */
+        size: 14px;
     }
 }
 
