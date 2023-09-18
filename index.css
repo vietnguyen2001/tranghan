@@ -949,6 +949,7 @@ h2 {
         display: flex;
         /* flex-wrap: nowrap; */
         width: 100%;
+        margin-left: 15px;
     }
     .hotro ul li,
     .spKhac ul li {
