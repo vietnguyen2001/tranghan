@@ -797,8 +797,8 @@ h2 {
     #content_warp .singer_left_avatar {
         width: 30%;
         height: 250px;
-        background: black;
-        opacity: 0.5;
+        background: rgba(0, 0, 0, 0.5);
+        /* opacity: 1; */
     }
     #content_warp .singer_left_avatar h1 {
         font-size: 13px;
@@ -807,7 +807,7 @@ h2 {
         font-size: 11px;
     }
     .singer_left_avatar img {
-        /* opacity: 2; */
+        opacity: 1;
     }
     #content_warp .singer_right_avatar img {
         display: none;
@@ -1082,8 +1082,7 @@ h2 {
     #content_warp .singer_left_avatar {
         width: 30%;
         height: 250px;
-        background: black;
-        opacity: 0.5;
+        background: rgba(0, 0, 0, 0.5);
     }
     #content_warp .singer_left_avatar h1 {
         font-size: 13px;
@@ -1092,7 +1091,7 @@ h2 {
         font-size: 11px;
     }
     .singer_left_avatar img {
-        /* opacity: 2; */
+        opacity: 1;
     }
     #content_warp .singer_right_avatar img {
         display: none;
